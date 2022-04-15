@@ -43,6 +43,15 @@ body{
 
 }
 
+a {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-white);
+}
+
 .btn{
     width: max-content;
     display: inline-block;
@@ -61,7 +70,7 @@ body{
 }
 
 
-/* */
+/* ======== GENERAL STYLE ===========*/
 .container{
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -79,10 +88,21 @@ h1 {
 
 section{
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2,
 section >h5 {
   text-align: center;
   color: var(--color-light);
+}
+
+@media screen and (max-width: px) {
+    .container {
+        width: var(--container-width-md) ;
+    }
+
+    section > h2{
+       margin-top: 6rem; 
+    }
 }
