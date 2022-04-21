@@ -19,9 +19,11 @@
     --color-white: #fff;
     --color-light: rgba(255,255,255,0.6);
 
+    --transition: all 400ms ease;
+
     --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-ms: 96%; 
+    --container-width-sm: 90%; 
 
 }
 
@@ -43,6 +45,42 @@ body{
 
 }
 
+
+/* ======== GENERAL STYLE ===========*/
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+section{
+    margin-top: 8rem;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+
+section > h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+
+}
+
+.text-light {
+    color: var(--color-light);
+}
 a {
     color: var(--color-primary);
     transition: var(--transition);
@@ -69,33 +107,13 @@ a:hover {
 
 }
 
-
-/* ======== GENERAL STYLE ===========*/
-.container{
-    width: var(--container-width-lg);
-    margin: 0 auto;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: 500;
-}
-h1 {
-    font-size: 2.5rem;
+img{
+    display: block;
+    width: 100% ;
+    object-fit: cover;
 }
 
-section{
-    margin-top: 8rem;
-    height: 100vh;
-}
 
-section > h2,
-section >h5 {
-  text-align: center;
-  color: var(--color-light);
-}
 
 @media screen and (max-width: px) {
     .container {
